@@ -1,20 +1,16 @@
 /*===*/
 body {
   margin: 0;
-  height: 100vh;
-  padding: 90px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  min-height: 100vh;
+  padding: 0;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
   background: linear-gradient(90deg, rgba(61, 59, 69, 1) 0%, rgba(143, 33, 86, 1) 21%, rgba(252, 176, 69, 1) 90%);
   font-size: large;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #fff;
 }
 
-
+/* Remove flex and overflow here */
 .container {
   width: 50%;
   text-align: center;
@@ -170,4 +166,66 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* Main content flex layout */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 120px auto 80px auto;
+  min-height: 60vh;
+  box-sizing: border-box;
+}
+
+/* Container and funfacts width for desktop */
+.container, .funfacts {
+  width: 350px;
+  max-width: 90vw;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    min-height: unset;
+  }
+  .container, .funfacts {
+    width: 95%;
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px 0 80px 0;
+    font-size: 1rem;
+  }
+  .main-content {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    gap: 18px;
+  }
+  .container, .funfacts {
+    width: 99%;
+    max-width: 99vw;
+    padding: 10px;
+  }
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .topnav {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 5px;
+  }
 }
