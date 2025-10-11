@@ -80,6 +80,21 @@ body {
   width: 300px;
 }
 
+/* ...existing code... */
+.funfacts ul li {
+  transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s, background 0.18s;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.funfacts ul li:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 18px rgba(249,0,83,0.15);
+  background: rgba(249,0,83,0.07);
+  border-radius: 8px;
+}
+/* ...existing code... */
+
 .funfacts h2 {
   margin-top: 0;
 }
