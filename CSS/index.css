@@ -40,7 +40,7 @@ body {
   background-origin: border-box;
   animation: avatar-glow 3s ease-in-out infinite;
 }
-
+/* ...for the animation... */
 @keyframes avatar-glow {
   0% {
     box-shadow: 0 0 24px 0 rgba(249,0,83,0.18), 0 2px 24px 0 rgba(0,0,0,0.18);
