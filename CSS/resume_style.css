@@ -64,12 +64,12 @@ h2 {
 
 h4 {
   font-size: 20px;
-  color: #fff;
+  color: #ffffff;
 }
 
 h5, p {
   font-size: 15px;
-  color: #ddd;
+  color: #ffffff;
 }
 
 /* Image */
@@ -79,7 +79,7 @@ img {
   display: block;
 }
 
-/* HR Lines */
+
 hr {
   border: none;
   height: 1px;
