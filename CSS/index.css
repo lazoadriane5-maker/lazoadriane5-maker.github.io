@@ -84,6 +84,10 @@ body {
 .topnav a.active {
   background-color: rgb(249, 0, 83);
   color: #fff;
+  box-shadow: 0 0 12px 2px #ff00cc88, 0 2px 8px #fcb04555;
+  text-shadow: 0 0 6px #fff, 0 0 12px #ff00cc88;
+  position: relative;
+  z-index: 1;
 }
 
 .funfacts {
@@ -106,10 +110,10 @@ body {
 }
 
 .funfacts ul li:hover {
-  transform: scale(1.08);
-  box-shadow: 0 4px 18px rgba(249,0,83,0.15);
-  background: rgba(249,0,83,0.07);
-  border-radius: 8px;
+  transform: scale(1.10) rotate(-2deg);
+  box-shadow: 0 6px 24px rgba(249,0,83,0.18);
+  background: rgba(249,0,83,0.09);
+  border-radius: 10px;
 }
 
 .funfacts h2 {
@@ -165,6 +169,12 @@ footer {
 
 footer p {
   margin: 0;
+  animation: footerPulse 2.5s infinite alternate;
+}
+
+@keyframes footerPulse {
+  0% { color: #fff; }
+  100% { color: #fcb045; letter-spacing: 1.5px; }
 }
 
 /* Main content layout */
@@ -244,4 +254,35 @@ footer p {
     gap: 8px;
     padding: 10px 5px;
   }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.container, .funfacts {
+  animation: fadeSlideUp 0.8s cubic-bezier(.4,2,.6,1) both;
+}
+
+.funfacts {
+  animation-delay: 0.15s;
+}
+
+.topnav {
+  animation: fadeNav 0.7s cubic-bezier(.4,2,.6,1) both;
+}
+@keyframes fadeNav {
+  from { opacity: 0; transform: translateY(-30px);}
+  to   { opacity: 1; transform: translateY(0);}
 }

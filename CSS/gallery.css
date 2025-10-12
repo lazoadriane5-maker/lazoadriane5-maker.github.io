@@ -25,6 +25,16 @@ body {
   z-index: -2;
 }
 
+/* === Background Video Overlay === */
+.videobg::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.45);
+  z-index: -1;
+  pointer-events: none;
+}
+
 /* === Navbar === */
 .topnav {
   width: 100%;
@@ -53,6 +63,10 @@ body {
 .topnav a.active {
   background-color: rgb(249, 0, 83);
   color: #fff;
+  box-shadow: 0 0 12px 2px #ff00cc88, 0 2px 8px #fcb04555;
+  text-shadow: 0 0 6px #fff, 0 0 12px #ff00cc88;
+  position: relative;
+  z-index: 1;
 }
 
 /* === Gallery Section === */
@@ -91,8 +105,10 @@ body {
   border: 3px solid rgb(215, 191, 4);
   border-radius: 15px;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: rgba(255,255,255,0.10);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  backdrop-filter: blur(6px);
+  border: 1.5px solid rgba(255,255,255,0.18);
   min-height: 320px;
 }
 
@@ -106,6 +122,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  animation: fadeIn 0.7s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98);}
+  to { opacity: 1; transform: scale(1);}
 }
 
 .active-slide {
@@ -192,6 +214,19 @@ body {
 .active-dot {
   background: rgb(249, 0, 83);
   opacity: 1;
+}
+
+/* === Caption === */
+.caption {
+  color: #fff;
+  background: rgba(0,0,0,0.35);
+  padding: 8px 0;
+  font-size: 1rem;
+  border-radius: 0 0 12px 12px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */

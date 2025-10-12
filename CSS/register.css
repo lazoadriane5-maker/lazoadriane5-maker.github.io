@@ -33,6 +33,10 @@ body {
 .topnav a.active {
   background-color: rgb(249, 0, 83);
   color: #fff;
+  box-shadow: 0 0 12px 2px #ff00cc88, 0 2px 8px #fcb04555;
+  text-shadow: 0 0 6px #fff, 0 0 12px #ff00cc88;
+  position: relative;
+  z-index: 1;
 }
 
 .register-main {
