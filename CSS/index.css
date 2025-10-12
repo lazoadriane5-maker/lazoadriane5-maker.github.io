@@ -214,6 +214,57 @@ footer p {
   margin: 0;
 }
 
+/* About and Projects Preview styling */
+.about, .projects-preview {
+  background: rgba(255,255,255,0.10);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 28px 24px;
+  margin: 32px auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+.projects-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.13);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 18px 12px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.project-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(249,0,83,0.18);
+}
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.social-links {
+  margin: 24px 0;
+  text-align: center;
+}
+.social-links a {
+  margin: 0 10px;
+  color: #ff00cc;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.social-links a:hover {
+  color: #fcb045;
+}
+
 /* Responsive: stack vertically on small screens */
 @media (max-width: 900px) {
   .main-content {
