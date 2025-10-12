@@ -90,6 +90,23 @@ body {
   position: relative;
   z-index: 1;
 }
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 42px;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(249, 0, 83, 0.6);
+}
 
 .funfacts {
   background: rgba(255,255,255,0.1);
