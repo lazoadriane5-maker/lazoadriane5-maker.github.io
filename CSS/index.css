@@ -111,7 +111,6 @@ body {
   background: rgba(249,0,83,0.07);
   border-radius: 8px;
 }
-/* ...existing code... */
 
 .funfacts h2 {
   margin-top: 0;
@@ -127,7 +126,7 @@ body {
 }
 
 .funfacts li::before {
-  content: "🎧 ";
+  content: "🎧";
 }
 
 
