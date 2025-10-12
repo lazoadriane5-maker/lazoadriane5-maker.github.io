@@ -3,180 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/topnavigation.css">
+    <link rel="stylesheet" href="css/register.css">
     <title>Register</title>
-<style>
-.body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.topnav {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 12px 30px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  gap: 20px;
-  overflow: hidden;
-}
-
-.topnav a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-size: 16px;
-  transition: background-color 0.3s, color 0.3s;
-  white-space: nowrap;
-}
-
-.topnav a:hover,
-.topnav a.active {
-  background-color: rgb(249, 0, 83);
-  color: #fff;
-}
-
-
-body {
-  color: black;
-  background-color: #fff;
-  padding-top: 60px;
-}
-
-body.gallery {
-  color: rgb(249, 0, 83);
-  background-color: #fff;
-}
-
-form {
-  width: 400px;
-  background: #f4f4f4;
-  padding: 20px 30px;
-  border-radius: 8px;
-  box-shadow: 0
-}
-</style>
-
 </head>
 <body>
-
-        <div class="topnav">
+    <div class="topnav">
         <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
         <a href="Resume.html">Resume</a>
         <a href="gallery.html">Gallery</a>
         <a class="active" href="register.html">Register</a>
     </div>
 
-        <hr>
-        <h3>Register</h3>
-        <hr>
+    <div class="register-main">
+        <div class="register-card">
+            <h2><span style="color:#ff00cc;">&#128100;</span> Register</h2>
+            <form>
+                <!--INFORMATION-->
+                <label>First Name</label>
+                <input type="text" placeholder="Enter first name" maxlength="12" required> 
 
-    <form>
-        <!--INFORMATION-->
-        <label>First Name:</label>
-        <input type="text" placeholder="Enter first name" maxlength="12" autofocus="" required=""> <br> <br>
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter last name" required>
 
-        <label></label>Last Name:
-        <input type="text" placeholder=" Enter last name" autofocus="" required=""><br><br>
+                <label>Address</label>
+                <input type="text" placeholder="Enter address" required> 
 
-        <label for="Address">Address</label>
-        <input type="text" placeholder="Enter Address" autofocus="" required=""> <br> <br>
+                <label>Civil Status</label>
+                <select>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Widow</option>
+                </select>
 
-        <label type="Civil status">Civil status</label>
-            <select name="" id="">
-                 <option value="Single">Single</option>
-                 <option value="Married">Married</option>
-                 <option value="Widow">Widow</option>
-            </select><br><br>
+                <label>Birthday</label>
+                <div class="birthday-row">
+                    <select>
+                        <option>January</option><option>February</option><option>March</option>
+                        <option>April</option><option>May</option><option>June</option>
+                        <option>July</option><option>August</option><option>September</option>
+                        <option>October</option><option>November</option><option>December</option>
+                    </select>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <select>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                        <option>2009</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                    </select>
+                </div>
 
-            <label> Birthday: </label> <br>
-          
-           <!--Month-->
-           <select> 
-                <option value="January."> January </option>
-                <option value="February."> February </option>
-                <option value="March."> March </option>
-                <option value="April."> April </option>
-                <option value="May"> May</option>
-                <option value="June"> June </option>
-                <option value="July."> July </option>
-                <option value="August"> August </option>
-                <option value="September"> September </option>
-                <option value="October"> October </option>
-                <option value="November"> November </option>
-                <option value="December">  December </option>
-           </select>
+                <label>Gender</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option> 
+                </select>
 
-           <!--Date-->
-           <select>
-            <option value="1"> 1 </option>
-            <option value="2"> 2 </option>
-            <option value="3"> 3 </option>
-            <option value="4"> 4 </option>
-            <option value="5"> 5 </option>
-            <option value="6"> 6 </option>
-            <option value="7"> 7 </option>
-            <option value="8"> 8 </option>
-            <option value="9"> 9 </option>
-            <option value="10"> 10 </option>
-            <option value="11"> 11 </option>
-            <option value="12"> 12 </option>
-            <option value="13"> 13 </option>
-            <option value="14"> 14 </option>
-            <option value="15"> 15 </option>
-            <option value="16"> 16 </option>
-            <option value="17"> 17 </option>
-            <option value="18"> 18 </option>
-            <option value="19"> 19 </option>
-            <option value="20"> 20 </option>
-            <option value="21"> 21 </option>
-            <option value="22"> 22 </option>
-            <option value="23"> 23 </option>
-            <option value="24"> 24 </option>
-            <option value="25"> 25 </option>
-            <option value="26"> 26 </option>
-            <option value="27"> 27 </option>
-            <option value="28"> 28 </option>
-            <option value="29"> 29 </option>
-            <option value="30"> 30 </option>
-            <option value="31"> 31 </option>
-           </select>
-
-           <!--Year-->
-           <select>
-           <option value="2015"> 2015</option>
-           <option value="2016"> 2016</option>
-           <option value="2017"> 2017</option>
-           <option value="2018"> 2018</option>
-           <option value="2019"> 2019</option>
-           <option value="2020"> 2020</option>
-           <option value="2021"> 2021</option>
-           <option value="2022"> 2022 </option>
-           <option value="2023"> 2023 </option>
-           <option value="2024"> 2024 </option>
-           <option value="2025"> 2025</option>
-            </select> <br> <br>
-
-
-        <label type="Gender">Gender</label>
-            <select name="" id="">
-                 <option value="Male">Male</option>
-                 <option value="Female">Female</option> 
-             </select><br><br> 
-
-        <!--<button>REGISTER</button>-->
-        <input type="submit" value="Register">
-        <input type="reset" value="Clear"> <br> <br>
-        
-
-    </form>
-
-</body></html>
+                <button type="submit" class="glow-btn">Register</button>
+                <button type="reset" class="clear-btn">Clear</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

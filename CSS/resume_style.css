@@ -93,27 +93,33 @@ h2, h4, h5 {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
   text-align: center;
   padding: 10px;
   background-color: #0e0e0e;
   font-size: 14px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  color: #aaa;
+  border-top: 3px solid;
+  border-image: linear-gradient(90deg, #c03d00, #ff00ff, #00ffff) 1;
+  box-shadow: 0 -2px 15px rgba(255, 0, 255, 0.3);
+  z-index: 100;
+  animation: pulse 6s ease-in-out infinite;
 }
 
-@media (max-width: 600px) {
-  .resume-main {
-    padding-top: 70px;
-    padding-bottom: 20px;
+@keyframes pulse {
+  0% {
+    box-shadow: 0 -2px 15px rgba(255, 0, 255, 0.3);
+    border-image: linear-gradient(90deg, #c03d00, #ff00ff, #00ffff) 1;
   }
-  .container {
-    padding: 18px 6px;
-    max-width: 98vw;
+  50% {
+    box-shadow: 0 -2px 25px rgba(0, 255, 255, 0.6);
+    border-image: linear-gradient(90deg, #00ffff, #ff00ff, #c03d00) 1;
   }
-  .avatar {
-    width: 100px;
-    height: 100px;
+  100% {
+    box-shadow: 0 -2px 15px rgba(255, 0, 255, 0.3);
+    border-image: linear-gradient(90deg, #c03d00, #ff00ff, #00ffff) 1;
   }
 }
