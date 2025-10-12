@@ -317,6 +317,8 @@ body {
   box-shadow: 0 4px 24px rgba(0,0,0,0.18);
   padding: 18px 14px 22px 14px;
   text-align: center;
+  text-decoration: none;
+  color: inherit;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
