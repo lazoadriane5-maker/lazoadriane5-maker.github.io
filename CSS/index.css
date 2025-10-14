@@ -52,7 +52,6 @@ body {
     background: linear-gradient(135deg, #ff00cc 0%, #333399 100%) border-box;
   }
 }
-/* ...existing code... */
 
 /* === TOP NAVIGATION === */
 .topnav {
@@ -67,7 +66,6 @@ body {
   left: 0;
   z-index: 1000;
   gap: 20px;
-  overflow: hidden;
   backdrop-filter: blur(30px);
 }
 
@@ -79,6 +77,43 @@ body {
   font-size: 16px;
   transition: background-color 0.3s, color 0.3s;
   white-space: nowrap;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  min-width: 120px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  z-index: 1;
+  top: 36px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(249, 0, 83);
+  color: #fff;
+}
+
+/* 👇 This is the fix */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .topnav a:hover,
