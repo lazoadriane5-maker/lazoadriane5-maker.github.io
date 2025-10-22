@@ -1,0 +1,72 @@
+/**global styles**/
+*{
+        margin: 0;
+        padding: 0;
+}
+/**body and header styles**/
+body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: #22C1C3;
+background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+        line-height: 1.6;
+}
+/**nav and header styles**/
+header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+}
+header h1{
+        font-size: 20px;
+        margin-left: 20px;
+}
+header p{
+        font-size: 18px;
+        margin-top: 0 15px;
+        padding: 5px;
+        font-style: italic;
+        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+nav a{
+        font-size: 20px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 10px;
+}
+nav li{
+        margin: 0 15px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        
+}
+
+nav a:hover{
+        text-decoration: none;
+        color: #000000;
+        border-radius: 5px;
+        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+
+}
+nav li:hover{
+        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+        color: #b3cf12;
+}
+/**main section styles**/
+main{
+        padding: 20px;
+        min-height: 400px;
+}
+
+this is the css any tweaks?
+
