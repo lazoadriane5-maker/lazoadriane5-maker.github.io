@@ -34,4 +34,3 @@ function type() {
   }
 }
 type();
-s
