@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const slides = document.querySelectorAll('.slides img');
+  const slides = Array.from(document.querySelectorAll('.slides img'));
   const next = document.querySelector('.next');
   const prev = document.querySelector('.prev');
-  let index = 0;
+  let index = slides.findIndex(s => s.classList.contains('active'));
+  if (index === -1) index = 0;
 
   function showSlide(i) {
     slides.forEach(slide => slide.classList.remove('active'));

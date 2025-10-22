@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gallery | MC_LĀZ</title>
   <link rel="stylesheet" href="css/gallery.css" />
-</body>
-</html>
-
 </head>
 <body>
   <!-- HEADER -->
@@ -28,35 +25,40 @@
   <main>
     <section>
       <div class="slider-container">
-        <button class="prev">&#10094;</button>
+        <button class="prev" aria-label="Previous slide">&#10094;</button>
+
         <div class="slides">
           <img src="images/1.jpg" alt="Slide 1" class="active">
           <img src="images/2.jpg" alt="Slide 2">
           <img src="images/3.jpg" alt="Slide 3">
-          <img src="images/4.png" alt="slide 4">
+          <img src="images/4.png" alt="Slide 4">
+          <img src="images/5.png" alt="Slide 5">
         </div>
-        <button class="next">&#10095;</button>
+
+        <button class="next" aria-label="Next slide">&#10095;</button>
       </div>
     </section>
   </main>
 
   <!-- FOOTER -->
-    <footer>
-      <p>© 2025 <strong>MC_LĀZ</strong> | All Rights Reserved</p>
-      <p>Email: <a href="mailto:lazoadrine5@gmail.com">lazoadrine5@gmail.com</a></p>
+  <footer>
+    <p>© 2025 <strong>MC_LĀZ</strong> | All Rights Reserved</p>
+    <p>Email: <a href="mailto:lazoadrine5@gmail.com">lazoadrine5@gmail.com</a></p>
 
-      <div class="socials">
-        <a href="https://github.com/lazoadriane5-maker" target="_blank">
-          <img src="images/GitHubicon.png" class="icon" alt="GitHub">
-        </a>
-        <a href="https://web.facebook.com/Mclaz22/" target="_blank">
-          <img src="images/Facebook_icon.png" class="icon" alt="Facebook">
-        </a>
-        <a href="https://instagram.com/yourprofile" target="_blank">
-          <img src="images/Instagram_icon.png.webp" class="icon" alt="Instagram">
-        </a>
-      </div>
-    </footer>
+    <div class="socials">
+      <a href="https://github.com/lazoadriane5-maker" target="_blank">
+        <img src="images/GitHubicon.png" class="icon" alt="GitHub">
+      </a>
+      <a href="https://web.facebook.com/Mclaz22/" target="_blank">
+        <img src="images/Facebook_icon.png" class="icon" alt="Facebook">
+      </a>
+      <a href="https://instagram.com/yourprofile" target="_blank">
+        <img src="images/Instagram_icon.png.webp" class="icon" alt="Instagram">
+      </a>
+    </div>
+  </footer>
+
+  <!-- script loaded at end to ensure DOM exists -->
+  <script src="js/gallery.js" defer></script>
 </body>
-<script src="js/gallery.js"></script>
 </html>
