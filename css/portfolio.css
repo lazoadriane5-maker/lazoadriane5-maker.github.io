@@ -1,0 +1,186 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #22c1c3 0%, #fdbb2d 100%);
+  color: #111;
+  line-height: 1.6;
+  background-attachment: fixed;
+}
+
+/* ===== Header ===== */
+/* ===== Header ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+header p {
+  background: linear-gradient(90deg, #2a7b9b, #57c785, #eddd53);
+  color: #000;
+  font-size: 13px;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background: linear-gradient(90deg, #2a7b9b, #57c785, #eddd53);
+  color: #000;
+  box-shadow: 0 0 10px rgba(237, 221, 83, 0.5);
+}
+/* ===== Main ===== */
+main {
+  padding: 50px 8%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== Section ===== */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+}
+
+/* ===== Card ===== */
+.card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(255,255,255,0.25);
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #2a7b9b, #57c785, #eddd53);
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(237, 221, 83, 0.5);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #000;
+  color: #fff;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.25);
+}
+
+footer p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+footer a {
+  color: #57c785;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #eddd53;
+  text-decoration: underline;
+}
+
+.socials {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+  background: linear-gradient(90deg, #57c785, #eddd53);
+  box-shadow: 0 0 12px rgba(237, 221, 83, 0.4);
+}
+
