@@ -1,18 +1,21 @@
-/**global styles**/
-*{
-        margin: 0;
-        padding: 0;
+/* --- GLOBAL RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/**body and header styles**/
+
+/* --- BODY --- */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(120deg, #22c1c3 0%, #fdbb2d 100%);
+  background: linear-gradient(135deg, #22c1c3 0%, #fdbb2d 100%);
   color: #111;
   line-height: 1.6;
   min-height: 100vh;
+  background-attachment: fixed;
 }
 
-/**nav and header styles**/
+/* --- HEADER --- */
 header {
   display: flex;
   flex-wrap: wrap;
@@ -21,12 +24,17 @@ header {
   background: #000;
   color: #fff;
   padding: 15px 30px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
 header h1 {
   font-size: 24px;
   letter-spacing: 1px;
 }
+
 header p {
   font-size: 16px;
   padding: 5px 10px;
@@ -35,6 +43,7 @@ header p {
   color: #000;
 }
 
+/* --- NAVIGATION --- */
 nav ul {
   list-style: none;
   display: flex;
@@ -58,26 +67,25 @@ nav a.active {
   box-shadow: 0 0 10px rgba(237, 221, 83, 0.6);
 }
 
-/**main section styles**/
+/* --- MAIN --- */
 main {
   padding: 40px 10%;
-  background: rgba(255,255,255,0.2);
-  border-radius: 12px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
+
+/* --- HERO SECTION --- */
 .hero {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 90vh;
   padding: 50px 5%;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(8px);
-  border-bottom: 2px solid rgba(255,255,255,0.1);
+  border-radius: 50px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .hero::before {
@@ -87,15 +95,15 @@ main {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at center, rgba(255,255,255,0.15) 0%, transparent 60%);
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
   animation: rotate 20s linear infinite;
   z-index: 0;
   pointer-events: none;
 }
 
 @keyframes rotate {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .hero-text {
@@ -138,8 +146,91 @@ main {
 .hero-img img {
   width: 260px;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  opacity: 0.8;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hero-img img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.hero-img {
+  position: relative;
+}
+
+.hero-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.3) 100%);
+  border-radius: 20px;
+}
+
+/* --- GLASS SECTION --- */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px 40px;
+}
+
+.glass:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* --- SKILLS SECTION --- */
+#skills .skill {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+  height: 30px;
+}
+
+#skills .skill::before {
+  content: attr(data-skill);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 600;
+  color: #fff;
   z-index: 1;
 }
 
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 15px 30px;
+  background: #000;
+  color: #fff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
 
+footer p {
+  font-size: 14px;
+}
+
+footer a {
+  color: #57c785;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
