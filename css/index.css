@@ -4,68 +4,64 @@
         padding: 0;
 }
 /**body and header styles**/
-body{
-        font-family: Arial, Helvetica, sans-serif;
-        background: #22C1C3;
-background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-        line-height: 1.6;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #22c1c3 0%, #fdbb2d 100%);
+  color: #111;
+  line-height: 1.6;
+  min-height: 100vh;
 }
+
 /**nav and header styles**/
-header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #000000;
-        color: #ffffff;
-        padding: 10px 0;
-        text-align: center;
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-header h1{
-        font-size: 20px;
-        margin-left: 20px;
+header h1 {
+  font-size: 24px;
+  letter-spacing: 1px;
 }
-header p{
-        font-size: 18px;
-        margin-top: 0 15px;
-        padding: 5px;
-        font-style: italic;
-        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-}
-nav ul{
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-}
-nav a{
-        font-size: 20px;
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 18px;
-        margin: 10px;
-}
-nav li{
-        margin: 0 15px;
-        padding: 5px 10px;
-        border-radius: 5px;
-        
+header p {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #2a7b9b, #57c785, #eddd53);
+  color: #000;
 }
 
-nav a:hover{
-        text-decoration: none;
-        color: #000000;
-        border-radius: 5px;
-        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
+nav a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
-nav li:hover{
-        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-        color: #b3cf12;
+
+nav a:hover,
+nav a.active {
+  color: #000;
+  background: linear-gradient(90deg, #2a7b9b, #57c785, #eddd53);
+  box-shadow: 0 0 10px rgba(237, 221, 83, 0.6);
 }
+
 /**main section styles**/
-main{
-        padding: 20px;
-        min-height: 400px;
+main {
+  padding: 20px;
+  min-height: 400px;
 }
 
 this is the css any tweaks?
