@@ -60,9 +60,86 @@ nav a.active {
 
 /**main section styles**/
 main {
-  padding: 20px;
-  min-height: 400px;
+  padding: 40px 10%;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  padding: 50px 5%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  position: relative;
+  overflow: hidden;
 }
 
-this is the css any tweaks?
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.15) 0%, transparent 60%);
+  animation: rotate 20s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.hero-text {
+  max-width: 500px;
+  z-index: 1;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #57c785, #eddd53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #2a7b9b, #57c785, #eddd53);
+  color: #000;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(237, 221, 83, 0.6);
+}
+
+.hero-img img {
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
 
