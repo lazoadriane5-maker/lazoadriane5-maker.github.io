@@ -148,7 +148,12 @@ footer {
   padding: 20px 30px;
   background: #000;
   color: #fff;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.25);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.25);
+}
+
+footer p {
+  font-size: 13px;
+  margin: 5px 0;
 }
 
 footer a {
@@ -157,27 +162,11 @@ footer a {
 }
 
 footer a:hover {
-  color: #eddd53;
-}
-
-.socials {
-  margin-top: 12px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  text-decoration: underline;
 }
 
 .icon {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.1);
-  padding: 5px;
-  transition: all 0.3s ease;
-}
-
-.icon:hover {
-  transform: scale(1.1);
-  background: linear-gradient(90deg, #57c785, #eddd53);
-  box-shadow: 0 0 12px rgba(237,221,83,0.4);
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
