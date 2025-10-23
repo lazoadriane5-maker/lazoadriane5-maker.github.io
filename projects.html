@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/projects.css">
     <title>Projects</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
     <p>Computer Science Student | Future Web Developer</p>
     <nav>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -20,23 +21,32 @@
     </nav>
   </header>
   
-  <main>
-    <section>
-      <h2>My Projects</h2>
-      <ul>
-        <li>
-          <h3>Project 1</h3>
-          <p>C++ codes</p>
-            <a href="" class="btn">View Project</a>
-        </li>
-        <li>
-          <h3>Project 2</h3>
-          <p>Python scripts</p>
-          <a href="" class="btn">View Project</a>
-        </li>
-      </ul>
-    </section>
-  </main>
+<main>
+  <section class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="C++ Project">
+        <div class="card-content">
+          <h3>C++ Project</h3>
+          <p>Mini programs demonstrating algorithm logic and syntax mastery.</p>
+          <a href="https://github.com/lazoadriane5-maker/cpp-project" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Python Project">
+        <div class="card-content">
+          <h3>Python Project</h3>
+          <p>Simple automation scripts for data manipulation and file operations.</p>
+          <a href="https://github.com/lazoadriane5-maker/Python_Projects" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
 
   <footer>
     <p>© 2025 ADRIANE LAZO | All Rights Reserved</p>
