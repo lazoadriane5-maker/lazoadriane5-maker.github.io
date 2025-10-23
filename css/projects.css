@@ -153,29 +153,49 @@ nav a.active {
 
 /* ===== Footer ===== */
 footer {
-  text-align: center;
-  padding: 15px 30px;
   background: #000;
   color: #fff;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 18px 10px;
+  border-top: 2px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
 }
 
 footer p {
-  font-size: 13px;
-  margin: 5px 0;
+  margin: 0px 0;
 }
 
 footer a {
   color: #57c785;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
-  text-decoration:none;
+  color: #eddd53;
 }
 
-.icon {
-  width: 18px;
-  vertical-align: middle;
-  margin-right: 5px;
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 8px;
 }
+
+.socials i {
+  font-size: 20px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.socials i:hover {
+  color: #eddd53;
+  transform: scale(1.15);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 6px;
+}
+
