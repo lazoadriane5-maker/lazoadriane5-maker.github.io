@@ -15,7 +15,16 @@
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+        <span class="nav-label">About</span>
+        <div class="dropdown-content">
+          <p>
+            This e-portfolio serves as a personal showcase of my journey as a Computer Science student — 
+            a space where I present my projects, skills, and growth as a future Web Developer.
+          </p>
+        </div>
+        </li>
+
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -65,22 +74,24 @@
 
 
   <!-- FOOTER -->
-    <footer>
-      <p>© 2025 <strong>MC_LĀZ</strong> | All Rights Reserved</p>
-      <p>Email: <a href="mailto:lazoadrine5@gmail.com">lazoadrine5@gmail.com</a></p>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-      <div class="socials">
-        <a href="https://github.com/lazoadriane5-maker" target="_blank">
-          <img src="images/GitHubicon.png" class="icon" alt="GitHub">
-        </a>
-        <a href="https://web.facebook.com/Mclaz22/" target="_blank">
-          <img src="images/Facebook_icon.png" class="icon" alt="Facebook">
-        </a>
-        <a href="https://instagram.com/yourprofile" target="_blank">
-          <img src="images/Instagram_icon.png.webp" class="icon" alt="Instagram">
-        </a>
-      </div>
-    </footer>
+  <footer>
+    <p>© 2025 ADRIANE LAZO | All Rights Reserved</p>
+    <p>Email: <a href="mailto:lazoadrine5@gmail.com"><i class="fa-solid fa-envelope"></i> lazoadrine5@gmail.com</a></p>
+
+    <div class="socials">
+      <a href="https://github.com/lazoadriane5-maker" target="_blank" title="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://web.facebook.com/Mclaz22/" target="_blank" title="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://instagram.com/yourprofile" target="_blank" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
     <script src="js/index.js" defer></script>
 </body>
 </html>
