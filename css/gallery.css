@@ -187,3 +187,100 @@ footer a:hover {
   color: #aaa;
   margin-top: 6px;
 }
+/* ===============================
+   RESPONSIVE - KEEP NAV HORIZONTAL
+   =============================== */
+
+/* Tablets & Small Laptops */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;        /* keeps it horizontal */
+    overflow-x: auto;         /* allow scrolling if too many items */
+    justify-content: center;
+    gap: 0.5rem;
+    scrollbar-width: none;    /* hide scrollbar (Firefox) */
+  }
+
+  nav ul::-webkit-scrollbar {
+    display: none;            /* hide scrollbar (Chrome) */
+  }
+
+  nav a {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 0.3rem;
+  }
+
+  nav a {
+    white-space: nowrap;  /* prevents text breaking */
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 80%;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    padding: 10px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+}
