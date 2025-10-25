@@ -203,6 +203,7 @@ main {
   background: linear-gradient(90deg, #2a7b9b, #57c785, #eddd53);
   color: #000;
   text-decoration: none;
+  margin: 10px;
   padding: 10px 22px;
   border-radius: 8px;
   font-weight: 600;
