@@ -62,6 +62,60 @@ nav a.active {
   box-shadow: 0 0 10px rgba(237, 221, 83, 0.5);
 }
 
+/* Dropdown base */
+.dropdown {
+  position: relative;
+}
+
+/* About text (non-clickable but still interactive) */
+.nav-label {
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Glow effect when hovered */
+.dropdown:hover .nav-label {
+  background: linear-gradient(90deg, #2a7b9b, #57c785, #eddd53);
+  color: #000;
+  box-shadow: 0 0 10px rgba(237, 221, 83, 0.6);
+}
+
+/* Dropdown text box */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 15px;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.dropdown-content p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /* SLIDER */
 .slider-container {
   position: relative;
